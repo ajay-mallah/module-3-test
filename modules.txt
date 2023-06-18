@@ -1,0 +1,2 @@
+composer require 'drupal/admin_toolbar:^3.4'
+
