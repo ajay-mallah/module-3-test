@@ -1,0 +1,16 @@
+uuid: d19eab7f-af3b-4b5f-be52-d044fc57d57f
+langcode: en
+status: true
+dependencies: {  }
+id: dev_split
+label: 'Dev Split'
+description: 'Configuration split for the Development environment.'
+weight: 0
+folder: ''
+module:
+  webform_ui: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
