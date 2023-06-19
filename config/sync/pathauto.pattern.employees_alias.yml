@@ -1,0 +1,14 @@
+uuid: 60d213a7-51b9-40fc-9255-4fcbffa37448
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: employees_alias
+label: 'employees alias'
+type: 'canonical_entities:user'
+pattern: 'Employee/[user:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

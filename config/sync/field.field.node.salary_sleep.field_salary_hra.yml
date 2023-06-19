@@ -1,0 +1,23 @@
+uuid: b586a9dd-9f23-4e29-bcdb-ff534641c4dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary_hra
+    - node.type.salary_sleep
+id: node.salary_sleep.field_salary_hra
+field_name: field_salary_hra
+entity_type: node
+bundle: salary_sleep
+label: HRA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: INR
+  suffix: ''
+field_type: decimal

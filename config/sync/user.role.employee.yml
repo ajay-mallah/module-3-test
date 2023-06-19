@@ -1,0 +1,10 @@
+uuid: 7f270238-9269-49cb-a436-b839dfcfc531
+langcode: en
+status: true
+dependencies: {  }
+id: employee
+label: Employee
+weight: 5
+is_admin: null
+permissions:
+  - 'change own username'

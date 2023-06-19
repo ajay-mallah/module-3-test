@@ -1,0 +1,28 @@
+uuid: d7c0365a-6302-4bf3-8062-085ae37fb47a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.salary_sleep
+  module:
+    - field_ui
+    - node
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'administer account settings'
+  - 'administer permissions'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'administer users'
+  - 'cancel account'
+  - 'change own username'
+  - 'create salary_sleep content'
+  - 'delete any salary_sleep content'
+  - 'edit any salary_sleep content'
+  - 'revert salary_sleep revisions'
+  - 'view salary_sleep revisions'
+  - 'view user email addresses'

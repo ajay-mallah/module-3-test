@@ -1,0 +1,23 @@
+uuid: 2d61fd69-7f3a-4441-8929-75aeb5acdb18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_special_allowances
+    - node.type.salary_sleep
+id: node.salary_sleep.field_special_allowances
+field_name: field_special_allowances
+entity_type: node
+bundle: salary_sleep
+label: 'Special Allowances'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: INR
+  suffix: ''
+field_type: decimal

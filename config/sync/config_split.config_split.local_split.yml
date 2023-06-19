@@ -6,7 +6,7 @@ id: local_split
 label: 'Local Split'
 description: 'Configuration split for the Local environment.'
 weight: 0
-folder: ''
+folder: ../config/split/local
 module:
   webform_ui: 0
 theme: {  }

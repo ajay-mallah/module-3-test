@@ -1,0 +1,24 @@
+uuid: 3dd71ff8-e36b-4ad3-a281-ff34b6f7e99e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_processed_at_salary
+    - node.type.salary_sleep
+  module:
+    - datetime
+id: node.salary_sleep.field_processed_at_salary
+field_name: field_processed_at_salary
+entity_type: node
+bundle: salary_sleep
+label: 'processed at '
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

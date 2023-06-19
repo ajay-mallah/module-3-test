@@ -1,0 +1,68 @@
+uuid: 27b440dd-73ed-4ace-ab02-f72bebd9fd09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary_sleep.field_employee_
+    - field.field.node.salary_sleep.field_processed_at_salary
+    - field.field.node.salary_sleep.field_salary_basics
+    - field.field.node.salary_sleep.field_salary_hra
+    - field.field.node.salary_sleep.field_special_allowances
+    - node.type.salary_sleep
+  module:
+    - datetime
+    - user
+id: node.salary_sleep.default
+targetEntityType: node
+bundle: salary_sleep
+mode: default
+content:
+  field_processed_at_salary:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_salary_basics:
+    type: number_decimal
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_salary_hra:
+    type: number_decimal
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_special_allowances:
+    type: number_decimal
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_employee_: true
