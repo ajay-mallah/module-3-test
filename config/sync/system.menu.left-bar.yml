@@ -1,0 +1,8 @@
+uuid: 409bde53-08b2-4f96-ae87-0f614091a554
+langcode: en
+status: true
+dependencies: {  }
+id: left-bar
+label: 'Left bar'
+description: 'left sidebar navigation tab.'
+locked: false

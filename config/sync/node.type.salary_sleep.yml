@@ -1,0 +1,17 @@
+uuid: 66967031-c975-4ed4-8ccc-2e79cb64e77d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Salary Sleep'
+type: salary_sleep
+description: "a content type that keeps a record of employee's salary"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

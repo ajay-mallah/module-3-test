@@ -1,0 +1,30 @@
+uuid: 16e62182-aaf7-42ba-b7d0-7eb3d949f9e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.salary_sleep.field_employee_
+    - field.field.node.salary_sleep.field_processed_at_salary
+    - field.field.node.salary_sleep.field_salary_basics
+    - field.field.node.salary_sleep.field_salary_hra
+    - field.field.node.salary_sleep.field_special_allowances
+    - node.type.salary_sleep
+  module:
+    - user
+id: node.salary_sleep.teaser
+targetEntityType: node
+bundle: salary_sleep
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_employee_: true
+  field_processed_at_salary: true
+  field_salary_basics: true
+  field_salary_hra: true
+  field_special_allowances: true

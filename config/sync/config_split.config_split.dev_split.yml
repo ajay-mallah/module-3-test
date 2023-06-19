@@ -6,7 +6,7 @@ id: dev_split
 label: 'Dev Split'
 description: 'Configuration split for the Development environment.'
 weight: 0
-folder: ''
+folder: ../config
 module:
   webform_ui: 0
 theme: {  }

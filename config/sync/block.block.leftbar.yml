@@ -1,0 +1,33 @@
+uuid: 56134819-ca97-41b5-9b97-23e0ec5b2199
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.left-bar
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap
+id: leftbar
+theme: bootstrap
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'system_menu_block:left-bar'
+settings:
+  id: 'system_menu_block:left-bar'
+  label: 'Left bar'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

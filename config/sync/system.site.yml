@@ -2,13 +2,14 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 31ddd8db-abc0-4b70-944f-0f05d975ccc7
-name: Drupal
-mail: ''
+name: 'Innoraft Employee Management Portal'
+mail: ajay.mallah@innoraft.com
 slogan: ''
 page:
-  403: ''
-  404: ''
-  front: /node
+  403: /node/2
+  404: /node/1
+  front: /node/6
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
+mail_notification: ''

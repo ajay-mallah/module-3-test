@@ -3,11 +3,111 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_user_full_name
+    - field.field.user.user.field_user_social_links
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
+    - layout_builder
+    - link
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: main
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          e80991b0-de43-4a3d-98de-d0abbdc5e9b5:
+            uuid: e80991b0-de43-4a3d-98de-d0abbdc5e9b5
+            region: first
+            configuration:
+              id: 'field_block:user:user:user_picture'
+              label: Picture
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          2af431a9-2d16-4c49-b6fc-09ad7265ff29:
+            uuid: 2af431a9-2d16-4c49-b6fc-09ad7265ff29
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_user_full_name'
+              label: 'Full Name'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e0adad91-16e6-4926-9124-ebbef47a9150:
+            uuid: e0adad91-16e6-4926-9124-ebbef47a9150
+            region: second
+            configuration:
+              id: 'field_block:user:user:roles'
+              label: Roles
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          ca2ab22b-b352-4bbb-a311-ab167df8177b:
+            uuid: ca2ab22b-b352-4bbb-a311-ab167df8177b
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_user_social_links'
+              label: 'Social links'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
 _core:
   default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
 id: user.user.default
@@ -15,15 +115,37 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_user_full_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_user_social_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 8
+    region: first
   member_for:
+    settings: {  }
+    third_party_settings: {  }
     weight: 5
     region: content
   user_picture:
     type: image
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: content
+      image_style: thumbnail
       image_loading:
         attribute: lazy
     third_party_settings: {  }

@@ -1,0 +1,23 @@
+uuid: c93392d4-be74-411b-bbe3-2a5140cab0ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary_basics
+    - node.type.salary_sleep
+id: node.salary_sleep.field_salary_basics
+field_name: field_salary_basics
+entity_type: node
+bundle: salary_sleep
+label: Basics
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: INR
+  suffix: ''
+field_type: decimal
